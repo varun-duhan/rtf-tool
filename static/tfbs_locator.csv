@@ -1,0 +1,37 @@
+S.No.,Conserved Sequence,TF Family,Reference
+1,GCACRNWTCCCRANGY,AP2,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=AP2
+2,CANNTG,BES1,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=BES1
+3,GCCGCC,ERF,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=ERF
+4,CCGAC,ERF,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=ERF
+5,TCCTCC,ERF,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6485614/
+6,GCGGCGG,GRF,
+7,CCWWWWWWGG,M-type_MADS,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=M-type_MADS
+8,GTTAGGGTTA,NF-X1,
+9,CAACA,RAV,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=RAV
+10,CACCTG,RAV,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=RAV
+11,TTGACY,WRKY,
+12,TACGTA,bZIP,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=bZIP
+13,GACGTC,bZIP,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=bZIP
+14,CACGTG,bZIP,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=bZIP
+15,GCCACGTMAG,bZIP,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2245831/
+16,TGTCTC,ARF,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=ARF
+17,TGGGCA,DBB,
+18,CACGCGC,FAR1,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=FAR1
+19,CACGTG,GeBP,
+20,CATGCATG,HSF,
+21,CCAAT,NF-YA,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=NF-YA
+22,GCGGCG,LBD,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=LBD
+23,YAACKG,MYB,
+24,CCAAT,NF-YB,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=NF-YB
+25,GTAC,SBP,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=SBP
+26,CCGCGT,CAMTA,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=CAMTA
+27,WGATAR,GATA,https://www.jstor.org/stable/4281704
+28,CCANTGG,LFY,https://www.nature.com/articles/s41467-020-20883-w
+29,CCAAT,NF-YC,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=NF-YC
+30,CAATWATTG,HD-ZIP,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2245831/
+31,CAATSATTG ,HD-ZIP,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2245831/
+32,CGTR,NAC,
+33,CATGTG,NAC,http://planttfdb.gao-lab.org/family.php?sp=Osj&fam=NAC
+34,RCCCGAC,DREB,
+35,CGTTGACCGAG,Zinc Finger,
+36,ATTGATTG,WOX,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6125423/

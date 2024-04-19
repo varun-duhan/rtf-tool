@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice TFBS Locator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        .home-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        ul li h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        ul li ul {
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+
+        ul li ul li {
+            margin-top: 5px;
+            color: #666;
+            margin-left: 20px; /* Added margin on the left */
+        }
+
+        ul li ul li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        ul li ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="home-link">Home</a>
+    <h1>TFBS Locator</h1>
+    <form action="{{ url_for('tfbs_locator') }}" method="post">
+        <label for="input_string">Please enter the query genomic DNA sequence:</label>
+        <input type="text" id="input_string" name="input_string">
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    {% if data %}
+        <div>
+            <h2>Output:</h2>
+            <ul>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f0f0f0;
+                        margin: 0;
+                        padding: 0;
+                    }
+                
+                    h1 {
+                        text-align: center;
+                        margin-top: 50px;
+                        color: #333;
+                    }
+                
+                    .home-link {
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        text-decoration: none;
+                        color: black;
+                        font-weight: bold;
+                    }
+                
+                    form {
+                        max-width: 400px;
+                        margin: 20px auto;
+                        padding: 20px;
+                        background-color: #fff;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    }
+                
+                    label {
+                        display: block;
+                        margin-bottom: 10px;
+                        font-weight: bold;
+                        color: #333;
+                    }
+                
+                    input[type="text"] {
+                        width: calc(100% - 22px);
+                        padding: 10px;
+                        margin-bottom: 20px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        font-size: 16px;
+                    }
+                
+                    input[type="submit"] {
+                        width: 100%;
+                        padding: 12px;
+                        border: none;
+                        border-radius: 4px;
+                        background-color: #007bff;
+                        color: #fff;
+                        font-size: 16px;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                    }
+                
+                    input[type="submit"]:hover {
+                        background-color: #0056b3;
+                    }
+                
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin-left: 20px; /* Added margin on the left */
+                    }
+                
+                    ul li {
+                        margin-bottom: 20px;
+                    }
+                
+                    ul li h2 {
+                        color: #333;
+                        margin-bottom: 10px;
+                    }
+                
+                    ul li ul {
+                        margin-top: 5px;
+                        margin-left: 20px;
+                    }
+                
+                    ul li ul li {
+                        margin-top: 5px;
+                        color: #666;
+                    }
+                
+                    ul li ul li a {
+                        color: #007bff;
+                        text-decoration: none;
+                    }
+                
+                    ul li ul li a:hover {
+                        text-decoration: underline;
+                    }
+                </style>
+                
+                {% for k, v in data.items() %}
+                    <li>
+                        <h3>{{ k }}</h3>
+                        <ul>
+                            <li>Indices: {{ v.indices }}</li>
+                            <li>Ref: <a href="{{ v.ref }}">{{ v.ref }}</a></li>
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</body>
+</html>

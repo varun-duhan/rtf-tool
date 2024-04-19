@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .home-button:hover {
+            background-color: #555;
+        }
+        .person {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .person img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .person h2 {
+            color: #555;
+            margin: 0;
+        }
+        .person p {
+            color: #777;
+            margin: 0;
+        }
+        .image-class {
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <button class="home-button" onclick="window.location.href='/'">Home</button>
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="person">
+            <img src="static/prof_sry.jpg" alt="Person 1" class="image-class">
+            <h2>Prof. Shri Ram Yadav</h2>
+            <p>Associate Professor</p>
+            <p>Biosciences and Bioengineering Department</p>
+            <p>IIT Roorkee</p>
+            <p>India</p>
+            <p>email: shri.yadav@bt.iitr.ac.in</p>
+        </div>
+        <div class="person">
+            <img src="static/Vedika_J.jpeg" alt="Person 2"  class="image-class">
+            <h2>Vedika J. Joshi</h2>
+            <p>Graduate Student</p>
+            <p>Plant Development and Functional Genomics Lab</p>
+            <p>IIT Roorkee</p>
+            <p>India</p>
+            <p>email: vedika_jj@bt.iitr.ac.in</p>
+        </div>
+        <div class="person">
+            <img src="static/varun.jpg" alt="Person 3" class="image-class">
+            <h2>Varun Duhan</h2>
+            <p>Undergraduate Student</p>
+            <!-- <p>IV Year, BE-400B</p> -->
+            <p>B.Tech. Biosciences and Bioengineering</p>
+            <p>IIT Roorkee</p>
+            <p>India</p>
+            <p>email: varun@bt.iitr.ac.in</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rtf-tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light gray background */
+            text-align: center;
+            color: #333; /* Text color for the entire page */
+        }
+
+        header {
+            background-color: #4CAF50; /* Green header background */
+            padding: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 20px 0;
+            color: black; /* Black heading color */
+            font-size: 32px; /* Larger font size */
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .text-content {
+            width: 50%;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .text-content h2 {
+            margin-top: 0;
+            color: #4CAF50; /* Green heading */
+        }
+
+        .image-content {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .image-content img {
+            max-width: 30%;
+            height: auto;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green button background */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        .bottom-buttons {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/" style="color: white; text-decoration: none;">Home</a>
+        </div>
+        <h1>Rice Transcription Factor Tool</h1>
+        <div class="buttons-container">
+            <a href="{{ url_for('about_us') }}" class="button">About us</a>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <div class="image-content">
+            <img src="static/logo_btp.jpeg" alt="Logo project">
+        </div>
+        <div class="text-content">
+            <p>
+                Rice (Oryza sativa) is a plant of profound global significance. It is a staple meal that is 
+                consumed by over half of the world's population, making it the foundation of our global 
+                food security. Understanding and enhancing rice's genetic potential is essential for addressing 
+                the challenges of a growing global population, climate change, and ever-increasing demands 
+                for food production.
+            </p>
+            <p>
+                For more information on rice, please visit: <a href="http://rice.uga.edu/">http://rice.uga.edu/</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="text-content">
+            <h2>Transcription Factors (TFs)</h2>
+            <p>
+                Transcription factors (TFs) are proteins that bind to DNA sequences near genes and modulate the transcription process, thereby influencing the production of messenger RNA (mRNA) from DNA. By binding to specific DNA sequences called transcription factor binding sites (TFBS), TFs can either enhance (activators) or inhibit (repressors) the recruitment of RNA polymerase, the enzyme responsible for synthesizing mRNA.
+                For more information on rice TFs, please visit <a href="https://planttfdb.gao-lab.org/index.php?sp=Osj">here</a>.
+            </p>
+        </div>
+        <div class="text-content">
+            <h2>Transcription Factor Binding Sites (TFBS)</h2>
+            <p>
+                Transcription factor binding sites (TFBS) are short and specific DNA sequences where TFs attach and regulate gene expression. These TFBSs are bound by TFs that recruit additional proteins to either activate or repress gene expression. These sites play a crucial role in gene regulation by controlling the transcription of genes in response to various cellular and environmental signals.
+            </p>
+        </div>
+
+        <div class="text-content"> 
+            <p>
+                Check out more information at - 
+            </p>
+            <p>
+                Blog: <a href="https://rtf-tool.blogspot.com/">https://rtf-tool.blogspot.com/</a><br>
+                Github: <a href="https://rtf-tool.blogspot.com/">https://rtf-tool.blogspot.com/</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="button-container bottom-buttons">
+        <a href="{{ url_for('tf_finder') }}" class="button">Rice TF Finder</a>
+        <a href="{{ url_for('tfbs_locator') }}" class="button">Rice TFBS Locator</a>
+    </div>
+</body>
+</html>
